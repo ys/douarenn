@@ -1,4 +1,8 @@
 baseURL = "https://douarenn.fr/"
 languageCode = "en-us"
 title = "Douarenn"
-theme = "term"
+theme = "douarenn"
+[params.font]
+  url = "https://use.typekit.net/inf6jer.css"
+[params.fathom]
+  siteID = "QHOUXOZZ"
