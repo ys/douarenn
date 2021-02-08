@@ -1,4 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://douarenn.fr/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "term"
+title = "Douarenn"
+theme = "hello-friend-ng"
+[params.Portrait]
+  Path = "/logo.png"
