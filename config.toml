@@ -1,6 +1,4 @@
-baseURL = "http://douarenn.fr/"
+baseURL = "https://douarenn.fr/"
 languageCode = "en-us"
 title = "Douarenn"
-theme = "hello-friend-ng"
-[params.Portrait]
-  Path = "/logo.png"
+theme = "term"
