@@ -4,63 +4,17 @@
 
 @tailwind utilities;
 
-:root {
-  --accent: {{ with .Site.Params.accentColor }}{{ . }}{{ else }}var(--onyx){{ end }};
-}
-
-.mode-dark {
-  .post, .content {
-    h2 {
-      @apply text-gray-400;
-    }
-    .medium-zoom-overlay {
-      @apply bg-dark;
-    }
-    blockquote {
-      a {
-        text-shadow: -1px -1px 0 theme('colors.dark'), 1px -1px 0 theme('colors.dark'), -1px 1px 0 theme('colors.dark'), 1px 1px 0 theme('colors.dark');
-        background-image: linear-gradient(to top, transparent, transparent 2px, theme('colors.blue.200') 2px, theme('colors.blue.200') 2.5px, transparent 2.5px);
-      }
-    }
-  }
-  .link, .post a, .content a {
-    @apply text-blue-500 no-underline relative;
-    text-shadow: -1px -1px 0 theme('colors.gray.900'), 1px -1px 0 theme('colors.gray.900'), -1px 1px 0 theme('colors.gray.900'), 1px 1px 0 theme('colors.gray.900');
-    background-image: linear-gradient(to top, transparent, transparent 2px, theme('colors.blue.200') 2px, theme('colors.blue.200') 2.5px, transparent 2.5px);
-    transition: color 0.5s, background-image 0.5s linear;
-    &:hover {
-      @apply text-blue-600 no-underline relative;
-      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-      background-image: linear-gradient(to top, transparent, transparent 2px , theme('colors.blue.300') 2px, theme('colors.blue.300') 2.5px, transparent 2.5px);
-    }
-  }
-}
-
-.link, .post a, .content a {
-  @apply text-blue-500 no-underline relative;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px
-  1px 0 white;
-  background-image: linear-gradient(to top, transparent, transparent 2px, theme('colors.blue.500') 2px, theme('colors.blue.500') 2.5px, transparent 2.5px);
-  transition: color 0.5s, background-image 0.5s linear;
-  &:hover {
-    @apply text-blue-600 no-underline relative;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-    background-image: linear-gradient(to top, transparent, transparent 2px
-    , theme('colors.blue.600') 2px, theme('colors.blue.600') 2.5px, transparent 2.5px);
-  }
-}
-
 hr {
   @apply block mt-6 mb-10 border-b border-gray-200 w-2/4 mx-auto;
 }
 
 .post, .content {
-  @apply mb-10;
-  h1 {
-   @apply my-6 pt-2 font-semibold block
+  @apply mb-10 font-light;
+  a {
+    @apply text-gray-100 underline transition relative;
   }
   h2 {
-   @apply my-6 pt-2 text-gray-600 font-semibold block
+   @apply py-2 text-2xl font-body font-semibold block
   }
   ul {
    @apply list-disc list-inside my-8
@@ -76,10 +30,6 @@ hr {
       @apply -mx-24;
     }
     @apply font-sans leading-snug text-blue-500 text-center italic text-2xl;
-    a {
-      text-shadow: -1px -1px 0 theme('colors.gray.200'), 1px -1px 0 theme('colors.gray.200'), -1px 1px 0 theme('colors.gray.200'), 1px 1px 0 theme('colors.gray.200');
-      background-image: linear-gradient(to top, transparent, transparent 2px, theme('colors.blue.200') 2px, theme('colors.blue.200') 2.5px, transparent 2.5px);
-    }
   }
 }
 

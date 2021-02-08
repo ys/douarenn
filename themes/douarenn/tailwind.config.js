@@ -81,7 +81,7 @@ module.exports = {
       primary: "#003E4B",
     },
       fontFamily: {
-        body: ['rokkitt', 'serif'],
+        body: ['"rokkitt"', 'serif'],
       },
       typography: {
         DEFAULT: {

@@ -10,18 +10,17 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{ partial "seo" . }}
   </head>
-  <body class="font-body font-semibold leading-relaxed text-sm bg-primary text-gray-100">
-    <div class="container my-10 w-screen md:max-w-xl lg:max-w-2xl mx-auto">
-      {{ if fileExists "/static/logo.png" }}
-        <div class="flex flex-col justify-center content-center place-content-center h-2/3 mb-6">
-          <img class="w-32 h-32 place-self-center" src="/logo.png"/>
-          <h1 class="text-center font-body">{{ .Site.Title }}</h1>
-        </div>
-      {{ end }}
-      <div class="mx-4 md:mx-0">
+  <body class="leading-relaxed bg-primary text-gray-100">
+    <div class="container my-10 w-screen md:max-w-lg mx-auto">
+      <div class="w-full flex flex-col space-y-0 items-center mb-24">
+        <img class="w-32 -mb-4 block" src="/logo.png"/>
+        <h1 class="font-body font-semibold block text-xl">{{ .Site.Title }}</h1>
+      </div>
+      <div class="mx-4 md:mx-0 mb-24">
         {{ block "main" . }} {{ end }}
       </div>
     </div>
+    {{ partial "footer" . }}
 
      <script src="https://cdn.usefathom.com/script.js" data-site="{{ .Site.Params.fathom.siteID }}" defer></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>

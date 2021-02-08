@@ -2,7 +2,13 @@ baseURL = "https://douarenn.fr/"
 languageCode = "en-us"
 title = "Douarenn"
 theme = "douarenn"
+[params]
+ footer = ""
 [params.font]
   url = "https://use.typekit.net/inf6jer.css"
 [params.fathom]
   siteID = "QHOUXOZZ"
+[params.social]
+  instagram = "douarenn"
+  email = "bonjour@douarenn.fr"
+  domain = "douarenn.fr"
