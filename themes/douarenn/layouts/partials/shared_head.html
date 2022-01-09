@@ -2,6 +2,7 @@
 {{ if .Site.Params.font.url }}
   <link rel="stylesheet" href="{{ .Site.Params.font.url }}" />
 {{ end }}
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 {{ $style := resources.Get "css/application.scss" | resources.ExecuteAsTemplate "main.css" . | toCSS | resources.PostCSS }}
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
