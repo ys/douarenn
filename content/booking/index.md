@@ -12,6 +12,4 @@ menu:
     weight: 3
 ---
 
-Réserver
-
-{{< contact . >}}
+{{< contact >}}
