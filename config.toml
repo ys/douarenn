@@ -6,9 +6,10 @@ theme = "douarenn"
  footer = ""
 [params.font]
   url = "https://use.typekit.net/inf6jer.css"
-[params.fathom]
-  siteID = "QHOUXOZZ"
+[params.plausible]
+  domain = "douarenn.fr"
 [params.social]
   instagram = "douarenn"
   email = "bonjour@douarenn.fr"
   domain = "douarenn.fr"
+

@@ -7,11 +7,15 @@
 hr {
   @apply block mt-6 mb-10 border-b border-gray-200 w-2/4 mx-auto;
 }
+.dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 
 .post, .content {
   @apply mb-10 font-light;
   a {
-    @apply text-gray-100 underline transition relative;
+    @apply underline transition relative;
   }
   h2 {
    @apply py-2 text-2xl font-body font-semibold block
@@ -33,8 +37,8 @@ hr {
   }
 }
 
-.logo svg {
-  @apply w-40 h-40 fill-current
+svg {
+  @apply w-32 h-32 fill-current;
 }
 
 // Expand Hugo templates
