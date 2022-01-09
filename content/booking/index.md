@@ -12,4 +12,7 @@ menu:
     weight: 3
 ---
 
+Les réservations ne sont pas encore ouvertes.  
+N'hésitez pas à nous envoyer un petit message et nous vous tiendrons au courant de l'ouverture.
+
 {{< contact >}}

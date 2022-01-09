@@ -11,3 +11,6 @@ menu:
   main:
     weight: 2
 ---
+
+Nos coins favoris, nos randos préférées, nos restaurants du coin.  
+Vous trouverez tout sur cette page.
