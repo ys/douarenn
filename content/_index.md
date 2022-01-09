@@ -1,6 +1,13 @@
 ---
+menu:
+  main:
+    weight: 1
+title: "Douarenn"
+seotitle: "Douarenn"
 resources:
-- "*.jpg"
+- "*.webp"
+- name: "cover"
+  src: "cover.webp"
 ---
 
 ## Douarenn, c'est quoi?
@@ -11,4 +18,4 @@ Douarenn, c'est le projet éco-cabane et ferme de fleurs de [Cloé](https://inst
 
 On vous tient informé!
 
-{{< photo src="cover.jpg" alt="vue aerienne" >}}
+{{< photo src="cover" alt="vue aerienne" >}}

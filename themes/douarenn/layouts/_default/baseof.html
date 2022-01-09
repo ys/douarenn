@@ -6,23 +6,25 @@
       <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}" title="{{ $.Site.Title }}" />
     {{ end -}}
     {{ partial "opengraph.html" . }}
-    {{ template "_internal/google_news.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ partial "seo" . }}
   </head>
-  <body class="leading-relaxed bg-primary text-gray-100">
+  <body class="leading-relaxed bg-white text-douarenn-600">
     <div class="container my-10 w-screen md:max-w-lg mx-auto">
-      <div class="w-full flex flex-col space-y-0 items-center mb-24">
-        <img class="w-32 -mb-4 block" src="/logo.png"/>
-        <h1 class="font-body font-semibold block text-xl">{{ .Site.Title }}</h1>
-      </div>
+      <header class="w-full flex flex-col space-y-0 items-center mb-24">
+        {{ if fileExists "/static/logo.svg" }}
+        {{ readFile "/static/logo.svg" | safeHTML}}
+        {{ else }}
+          <img class="w-32 -mb-4 block" src="/logo.png"/>
+        {{ end }}
+        {{ partial "main_menu" . }}
+      </header>
       <div class="mx-4 md:mx-0 mb-24">
         {{ block "main" . }} {{ end }}
       </div>
     </div>
     {{ partial "footer" . }}
 
-     <script src="https://cdn.usefathom.com/script.js" data-site="{{ .Site.Params.fathom.siteID }}" defer></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     {{ $.Scratch.Set "jslibs" slice }} {{ $libs := slice "js/medium-zoom.min.js" "js/lazyload.min.js" "js/main.js" }} {{ range $libs }} {{ $.Scratch.Add "jslibs" (resources.Get . ) }} {{ end }} {{ $js := .Scratch.Get "jslibs" | resources.Concat "js/main.js" }} {{ if .Site.IsServer }}
     <script src="{{ $js.RelPermalink }}"></script>
