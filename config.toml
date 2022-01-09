@@ -13,9 +13,3 @@ theme = "douarenn"
   email = "bonjour@douarenn.fr"
   domain = "douarenn.fr"
 
-[params.mapbox]
-  token = 'pk.eyJ1IjoieWFubmljay1pbyIsImEiOiJjamY1NmR3NjMwNHkwMnBscDc2Nzl6b2ZwIn0.NbV8ywwFWfOH4T8DAN_tKw'
-  style = 'mapbox://styles/yannick-io/cjfp8xi5t0e232sohss1qi5o5'
-  zoom = 8
-
-
