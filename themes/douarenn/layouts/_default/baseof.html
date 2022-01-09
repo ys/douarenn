@@ -43,6 +43,7 @@
     <script src="{{ $js.RelPermalink }}"></script>
     {{ else }} {{ $js := $js | minify | fingerprint "sha512"}}
     <script src="{{ $js.RelPermalink }}"></script>
+    <script defer data-domain="{{.Site.Params.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
     {{ end }}
 
   </body>

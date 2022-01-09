@@ -6,8 +6,8 @@ theme = "douarenn"
  footer = ""
 [params.font]
   url = "https://use.typekit.net/inf6jer.css"
-[params.fathom]
-  siteID = "QHOUXOZZ"
+[params.plausible]
+  domain = "douarenn.fr"
 [params.social]
   instagram = "douarenn"
   email = "bonjour@douarenn.fr"
@@ -17,3 +17,5 @@ theme = "douarenn"
   token = 'pk.eyJ1IjoieWFubmljay1pbyIsImEiOiJjamY1NmR3NjMwNHkwMnBscDc2Nzl6b2ZwIn0.NbV8ywwFWfOH4T8DAN_tKw'
   style = 'mapbox://styles/yannick-io/cjfp8xi5t0e232sohss1qi5o5'
   zoom = 8
+
+
