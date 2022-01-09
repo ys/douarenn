@@ -36,7 +36,7 @@ hr {
     @apply font-sans leading-snug text-blue-500 text-center italic text-2xl;
   }
   pre {
-    @apply font-sans p-4 bg-gray-100 rounded-sm drop-shadow-lg;
+    @apply font-sans p-4 bg-gray-100 rounded-sm drop-shadow-lg italic;
     code {
       @apply font-sans;
     }
