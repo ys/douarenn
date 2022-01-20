@@ -1,14 +1,14 @@
 {{ $current := . }}
-<nav class="py-4 border-b-1 border-t-1 text-lg font-mono  w-full tracking-tighter ">
+<nav class="py-4 border-b-1 border-t-1 text-lg  w-full tracking-tighter ">
   <ul class="inline flex flex-wrap flex-row justify-around">
     {{ range .Site.Menus.main }}
     {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
     {{ $active = or $active (eq .Page $current) }}
     {{ $active = or $active (eq .Page.Section $current.Type) }}
     <li
-        class="py-1 font-bold flex flex-row inline capitalize relative md:justify-center {{if $active}} {{end}} {{ with $current.Params.Color }}hover:text-{{ . }}-600 hover:border-{{ . }}-600{{ else }}hover:text-douarenn-100{{ end }} transition ease-in-out duration-200 {{ if $active }} dotted{{ end }}">
+        class="py-1 flex flex-row inline capitalize relative md:justify-center {{ with $current.Params.Color }}hover:text-{{ . }}-600 {{ else }}hover:text-grey-100{{ end }} transition ease-in-out duration-200 {{ if $active }} dotted{{ end }}">
       <span class=" mr-2"> {{.Pre}}</span>
-      <a class="{{ .Params.class }}  whitespace-nowrap" href="{{ .URL }}" title="{{ .Title }}">
+      <a class="{{ .Params.class }}  whitespace-nowrap hover:dotted" href="{{ .URL }}" title="{{ .Title }}">
         {{ if .Params.useEmoji }}
         {{ $current.Params.emoji | default $current.Site.Params.emoji}}
         {{ else }}
