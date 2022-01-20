@@ -10,15 +10,15 @@
     {{ partial "seo" . }}
   </head>
   <body class="leading-relaxed bg-white text-douarenn-600">
+    <header class="text-white w-full py-12 mb-12 flex flex-col space-y-0 items-center bg-center bg-no-repeat  bg-cover" style="background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/hero.webp')">
+      {{ if fileExists "/static/logo.svg" }}
+      {{ readFile "/static/logo.svg" | safeHTML}}
+      {{ else }}
+        <img class="w-32 -mb-4 block" src="/logo.png"/>
+      {{ end }}
+      {{ partial "main_menu" . }}
+    </header>
     <div class="container my-10 w-screen md:max-w-lg mx-auto">
-      <header class="w-full mb-12 flex flex-col space-y-0 items-center">
-        {{ if fileExists "/static/logo.svg" }}
-        {{ readFile "/static/logo.svg" | safeHTML}}
-        {{ else }}
-          <img class="w-32 -mb-4 block" src="/logo.png"/>
-        {{ end }}
-        {{ partial "main_menu" . }}
-      </header>
       <div class="mx-4 md:mx-0 mb-24">
         {{ block "main" . }} {{ end }}
       </div>
@@ -27,18 +27,6 @@
     {{ partial "footer" . }}
 
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <script>
-      mapboxgl.accessToken = {{ .Site.Params.mapbox.token }}
-      var map = new mapboxgl.Map({
-              container: 'map',
-              center: [-3.746697, 48.3985], // starting position [lng, lat]
-              interactive: false,
-              attributionControl: false,
-              zoom: {{ .Site.Params.mapbox.zoom }},
-              style: {{ .Site.Params.mapbox.style }}
-            });
-    </script>
     {{ $.Scratch.Set "jslibs" slice }} {{ $libs := slice "js/medium-zoom.min.js" "js/lazyload.min.js" "js/main.js" }} {{ range $libs }} {{ $.Scratch.Add "jslibs" (resources.Get . ) }} {{ end }} {{ $js := .Scratch.Get "jslibs" | resources.Concat "js/main.js" }} {{ if .Site.IsServer }}
     <script src="{{ $js.RelPermalink }}"></script>
     {{ else }} {{ $js := $js | minify | fingerprint "sha512"}}
