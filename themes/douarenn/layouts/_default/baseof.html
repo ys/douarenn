@@ -10,8 +10,9 @@
     {{ partial "seo" . }}
   </head>
   <body class="leading-relaxed bg-white text-douarenn-600">
-    <div class="container my-10 w-screen md:max-w-lg mx-auto">
-      <header class="w-full mb-12 flex flex-col space-y-0 items-center">
+    <div class="bg-douarenn-50 bg-opacity-10 m-0 pt-8 pb-4">
+    <div class="container w-screen md:max-w-lg mx-auto">
+      <header class="w-full  flex flex-col space-y-0 items-center">
         {{ if fileExists "/static/logo.svg" }}
         {{ readFile "/static/logo.svg" | safeHTML}}
         {{ else }}
@@ -19,6 +20,9 @@
         {{ end }}
         {{ partial "main_menu" . }}
       </header>
+    </div>
+    </div>
+    <div class="container my-16 w-screen md:max-w-lg mx-auto">
       <div class="mx-4 md:mx-0 mb-24">
         {{ block "main" . }} {{ end }}
       </div>

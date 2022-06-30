@@ -10,6 +10,8 @@ resources:
 menu:
   main:
     weight: 3
+    params:
+      extracss: "bg-douarenn-50 hover:bg-douarenn-300 text-white hover:text-white rounded-sm"
 ---
 
 Les réservations ne sont pas encore ouvertes.  
