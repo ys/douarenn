@@ -13,11 +13,13 @@
     <div class="bg-douarenn-50 bg-opacity-10 m-0 pt-8 pb-4">
     <div class="container w-screen md:max-w-lg mx-auto">
       <header class="w-full  flex flex-col space-y-0 items-center">
+        <a href="/">
         {{ if fileExists "/static/logo.svg" }}
         {{ readFile "/static/logo.svg" | safeHTML}}
         {{ else }}
           <img class="w-32 -mb-4 block" src="/logo.png"/>
         {{ end }}
+        </a>
         {{ partial "main_menu" . }}
       </header>
     </div>
