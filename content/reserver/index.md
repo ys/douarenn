@@ -11,7 +11,7 @@ menu:
   main:
     weight: 3
     params:
-      extracss: "bg-douarenn-50 hover:bg-douarenn-300 text-white hover:text-white rounded-sm"
+      extracss: "shadow-lg hover:shadow-xl bg-douarenn-50 hover:bg-douarenn-300 text-white hover:text-white rounded-sm"
 ---
 
 {{< photo src="cover">}}

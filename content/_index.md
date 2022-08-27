@@ -1,6 +1,7 @@
 ---
 title: "Douarenn"
-seotitle: "Douarenn"
+seotitle: "Location gîte nature - Douarenn, Finistère"
+description: "Déconnexion au coeur des Monts d'Arrée dans ce gîte 5 personnes"
 resources:
 - "*.webp"
 - name: "cover"
@@ -11,6 +12,6 @@ Douarenn, c'est un petit cocon pensé pour se retrouver en famille ou en couple 
 
 "La Cabane" comme nous aimons l'appeler est située au fond d'un petit chemin, sur un terrain privé de plus de 8000m2. Idéalement situé en centre Finistère, notre logement vous permet de visiter tout le département très facilement.  
 
-Pour les amoureux de la nature, elle offre une multitude de départs de randonnées car nous sommes aux coeurs des Monts d'Arrée, dans le parc régional d'Armorique, à 5mn des entrées de forêt d'Huelgoat.
+Pour les amoureux de la nature, elle offre une multitude de départs de randonnées. Nous sommes aux coeurs des Monts d'Arrée, dans le parc régional d'Armorique, à 5mn des entrées de la Forêt d'Huelgoat.
 
 {{< photo src="cover" alt="vue aerienne" >}}

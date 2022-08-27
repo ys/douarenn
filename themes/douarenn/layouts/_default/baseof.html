@@ -10,10 +10,10 @@
     {{ partial "seo" . }}
   </head>
   <body class="leading-relaxed bg-white text-douarenn-600">
-    <div class="bg-douarenn-50 bg-opacity-10 m-0 pt-8 pb-4">
+    <div class="g-douarenn-50 bg-opacity-10 m-0 pt-8 pb-4">
     <div class="container w-screen md:max-w-lg mx-auto">
       <header class="w-full  flex flex-col space-y-0 items-center">
-        <a href="/">
+        <a class="text-douarenn-100" href="/">
         {{ if fileExists "/static/logo.svg" }}
         {{ readFile "/static/logo.svg" | safeHTML}}
         {{ else }}
@@ -29,7 +29,6 @@
         {{ block "main" . }} {{ end }}
       </div>
     </div>
-    <div id='map' class="w-full h-64"></div>
     {{ partial "footer" . }}
 
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>

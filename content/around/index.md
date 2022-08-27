@@ -5,7 +5,7 @@ date: 2022-01-07T12:57:50+02:00
 draft: false
 resources:
   - src: "*.webp"
-  - src: "now.webp"
+  - src: "cover.webp"
     name: "cover"
 menu:
   main:
@@ -14,3 +14,5 @@ menu:
 
 Nos coins favoris, nos randos préférées, nos restaurants du coin.  
 Vous trouverez tout sur cette page.
+
+{{< photo src="cover" >}}

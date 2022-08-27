@@ -1,8 +1,14 @@
 <footer class="text-center w-full p-10 font-sans font-light text-xs">
-
-  <span class="mr-2">
+  <p class="my-4 font-semibold">
+  <a class="mx-auto my-4 w-10 block text-douarenn-100" href="/">
+  {{ if fileExists "/static/logo.svg" }}
+  {{ readFile "/static/logo.svg" | safeHTML}}
+  {{ else }}
+    <img class="w-32 -mb-4 block" src="/logo.png"/>
+  {{ end }}
+  </a>
     {{ $.Site.Params.footer }}
-  </span>
+  </p>
   {{ with .Site.Params.social.instagram }}
   <a class="mr-2" href="https://instagram.com/{{ . }}">📷 Instagram</a>
   {{ end }} {{ with .Site.Params.social.twitter }}
