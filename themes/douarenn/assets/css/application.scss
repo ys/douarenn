@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
+:root {
+  --gap: 18px;
+}
+
 hr {
   @apply block mt-6 mb-10 border-b border-gray-200 w-2/4 mx-auto;
 }
@@ -75,4 +79,14 @@ svg {
 }
 .twitter-tweet {
   @apply mx-auto my-10
+}
+.mgrid img {
+  width: calc(100% - var(--gap, 0px));
+  height: calc(100% - var(--gap, 0px));
+  left: calc(var(--gap, 0px) * 0.5);
+  top: calc(var(--gap, 0px) * 0.5);
+}
+
+.wide-width {
+  @apply md:-mr-32;
 }

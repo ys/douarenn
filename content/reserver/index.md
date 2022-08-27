@@ -19,15 +19,15 @@ menu:
 ## Conditions de location.
 
 Merci de prendre connaissance de ces grandes lignes avant de réserver.
-Vous trouverez également nos CGV ici pour plus d'informations.
+Vous trouverez également [nos CGV](/cgv) ici pour plus d'informations.
 
 Les locations se font à la semaine, du samedi au samedi, lors des vacances scolaires.
 En dehors de ces périodes, une location de 3 nuits minimum est demandée.
-Les entrées se font à 16heures et les départs sont à 10h.
+Les entrées se font à 16h et les départs sont à 10h.
 Merci de nous contacter pour vous confirmer rapidement la disponibilité de la Cabane.
 
 
-La Cabane peut accueillir jusqu'à 5 personnes, soit 2 adultes et 3 enfants soit 4 adultes. Lors de la réservation, vous mentionnerez le nombre de personnes occupant les lieux et seules ces personnes seront autorisées à loger sur place.
+La Cabane peut accueillir jusqu'à 5 personnes, soit 2 adultes et 3 enfants, soit 4 adultes. Lors de la réservation, vous mentionnerez le nombre de personnes occupant les lieux et seules ces personnes seront autorisées à loger sur place.
 
 Le locataire devra assurer le caractère paisible du domaine, toute forme de fête y est donc interdite. L'usage du tabac, vapoteuse, et autres substances sont formellement interdit dans la Cabane.
 L'usage du feu y est également interdit. 
