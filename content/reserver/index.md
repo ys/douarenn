@@ -5,7 +5,7 @@ date: 2022-01-07T12:57:50+02:00
 draft: false
 resources:
   - src: "*.webp"
-  - src: "cover.jpeg"
+  - src: "cover.webp"
     name: "cover"
 menu:
   main:
