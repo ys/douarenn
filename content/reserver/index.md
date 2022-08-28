@@ -9,7 +9,7 @@ resources:
     name: "cover"
 menu:
   main:
-    weight: 3
+    weight: 9
     params:
       extracss: "shadow-lg hover:shadow-xl bg-douarenn-50 hover:bg-douarenn-300 text-white hover:text-white rounded-sm"
 ---
