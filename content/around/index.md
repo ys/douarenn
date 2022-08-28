@@ -8,9 +8,6 @@ resources:
   - src: "*.jpg"
   - src: "cover.webp"
     name: "cover"
-menu:
-  main:
-    weight: 2
 ---
 
 Nos coins favoris, nos randos préférées, nos restaurants du coin.  

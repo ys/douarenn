@@ -1,0 +1,14 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+<div class="grid my-8 py-4 md:grid-cols-2 md:-mx-32 gap-8 ">
+  {{ if (.Get "before") }}
+  <div>
+     {{ .Inner |  markdownify }}
+  </div>
+  {{ end }}
+  {{ partial "photo" (dict "Image" $src) }}
+  {{ if (.Get "after") }}
+  <div>
+     {{ .Inner |  markdownify }}
+  </div>
+  {{ end }}
+</div>
