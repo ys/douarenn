@@ -16,7 +16,10 @@ menu:
 
 ![](cover)
 
-## Réservation disponible dès que possible.
+## Ouverture des réservations: Printemps 2023
 
-Merci de prendre connaissance de [Conditions de location](/conditions-location) avant de réserver.
-Vous trouverez également [nos CGV](/cgv) ici pour plus d'informations.
+N'hésitez pas à vous enregistrer si vous voulez être les premiers au courant!
+
+{{< interest id="840567a8-712e-418c-a6e0-8e159133d20e" >}}
+
+
