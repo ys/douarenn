@@ -1,6 +1,6 @@
 {{ $current := . }}
 <nav class="py-4 border-b-1 border-t-1 text-lg font-mono text-xl  w-full">
-  <ul class="inline flex flex-wrap flex-row justify-around">
+  <ul class="inline flex flex-wrap flex-col md:flex-row justify-around">
     {{ range .Site.Menus.main }}
     {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
     {{ $active = or $active (eq .Page $current) }}

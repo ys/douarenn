@@ -12,4 +12,5 @@ theme = "douarenn"
   instagram = "douarenn"
   email = "bonjour@douarenn.fr"
   domain = "douarenn.fr"
-
+[security.exec]
+ osEnv =  ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$','(?i)^ASDF', '^HOME$']

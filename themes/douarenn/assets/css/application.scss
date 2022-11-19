@@ -24,7 +24,7 @@ hr {
   a {
     @apply underline transition relative;
   }
-  h2 {
+  h1, h2 {
    @apply py-2 text-2xl font-body font-semibold block
   }
   ul {
