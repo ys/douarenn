@@ -24,19 +24,19 @@
       </header>
     </div>
     </div>
-    <div class="container my-16 w-screen md:max-w-lg mx-auto">
+    <div class="container my-16 w-screen md:max-w-xl mx-auto">
       <div class="mx-4 md:mx-0 mb-24">
         {{ block "main" . }} {{ end }}
       </div>
     </div>
     {{ partial "footer" . }}
 
+    <script defer src="/_vercel/insights/script.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     {{ $.Scratch.Set "jslibs" slice }} {{ $libs := slice "js/medium-zoom.min.js" "js/lazyload.min.js" "js/main.js" }} {{ range $libs }} {{ $.Scratch.Add "jslibs" (resources.Get . ) }} {{ end }} {{ $js := .Scratch.Get "jslibs" | resources.Concat "js/main.js" }} {{ if .Site.IsServer }}
     <script src="{{ $js.RelPermalink }}"></script>
     {{ else }} {{ $js := $js | minify | fingerprint "sha512"}}
     <script src="{{ $js.RelPermalink }}"></script>
-    <script defer data-domain="{{.Site.Params.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
     {{ end }}
 
   </body>
