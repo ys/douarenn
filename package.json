@@ -36,6 +36,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "netlify-cli": "^2.25.0",
     "now": "^19.0.0",
+    "npx": "^10.2.2",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
     "tailwind": "^4.0.0",

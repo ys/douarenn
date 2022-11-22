@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
+:root {
+  --gap: 18px;
+}
+
 hr {
   @apply block mt-6 mb-10 border-b border-gray-200 w-2/4 mx-auto;
 }
@@ -14,10 +18,13 @@ hr {
 
 .post, .content {
   @apply mb-10 font-light;
+  p:first-child {
+    @apply text-lg font-semibold;
+  }
   a {
     @apply underline transition relative;
   }
-  h2 {
+  h1, h2 {
    @apply py-2 text-2xl font-body font-semibold block
   }
   ul {
@@ -33,7 +40,7 @@ hr {
     @screen md {
       @apply -mx-24;
     }
-    @apply font-sans leading-snug text-blue-500 text-center italic text-2xl;
+    @apply font-sans leading-snug text-douarenn-500 text-center italic text-2xl;
   }
   pre {
     @apply font-sans p-4 bg-gray-100 rounded-sm drop-shadow-lg italic;
@@ -43,8 +50,12 @@ hr {
   }
 }
 
+header svg {
+  @apply w-32 h-32;
+}
+
 svg {
-  @apply w-32 h-32 fill-current;
+  @apply fill-current;
 }
 
 // Expand Hugo templates
@@ -68,4 +79,14 @@ svg {
 }
 .twitter-tweet {
   @apply mx-auto my-10
+}
+.mgrid img {
+  width: calc(100% - var(--gap, 0px));
+  height: calc(100% - var(--gap, 0px));
+  left: calc(var(--gap, 0px) * 0.5);
+  top: calc(var(--gap, 0px) * 0.5);
+}
+
+.wide-width {
+  @apply md:-mr-32;
 }
